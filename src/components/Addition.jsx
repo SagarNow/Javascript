@@ -7,6 +7,8 @@ const Addition = () => {
   const Add =  "₹" + (2095 + 799)/100; 
 // 3rd method
   const item = 'items  (' + (1 + 1) + ') ₹' + (2095 + 799)/100; //whole line
+// 4th method
+  const item2 = `items  (${1 + 1}) ₹${(2095 + 799)/100}`; // use of ${} this is called string interpolation
 
   //-------------------------screen----------------------------------
   return (
@@ -16,6 +18,7 @@ const Addition = () => {
         <div className="text-2xl">product price is {add}</div>
         <div className="text-2xl">product price is {Add}</div>
         <div className="text-2xl">product price is {item}</div>
+        <div className="text-2xl">product price is {item2}</div>
       </div>
     </div>
   );
