@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Addition</title><script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss"></style>
+
+</head>
+<body>
+    <div class="min-h-screen w-screen bg-[#232F3E] flex justify-center items-center flex-col  ">
+        <h1 class="text-4xl text-white pt-5 font-bold text-center  rounded-lg bg-[#F79600] p-2  w-50">Addition</h1>
+    </div>
+
+<script>
+// 1st method
+const add = "₹" + (20.95 + 7.99).toFixed(2); // wont show 1.8888888888 numbers 
+// 2nd method
+const Add =  "₹" + (2095 + 799)/100; 
+// 3rd method
+const item = 'items  (' + (1 + 1) + ') ₹' + (2095 + 799)/100; //whole line
+// 4th method
+const item2 = `items  (${1 + 1}) ₹${(2095 + 799)/100}`; // use of ${} this is called string interpolation
+console.log(add);
+console.log(Add);
+console.log(item);
+console.log(item2);
+</script>
+</body>
+</html>
