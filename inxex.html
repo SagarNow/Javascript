@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Java Script</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<style type="text/tailwindcss">
+/* cart quantity  simple project */
+</style>
+</head>
+<body>
+    <div class="min-h-screen w-screen bg-[#232F3E] flex  items-center flex-col ">
+        <h1 class="text-4xl text-white pt-5 font-bold">Cart Quantity</h1>
+            <div class="YellowBox bg-[#F79600] w-[200px] h-[100px] flex items-center justify-center rounded-[20px] mt-10">
+            </div>
+            <div class="BigBox bg-[#131A22] w-200 h-[100px] flex items-center justify-center rounded-[20px] gap-3 p-2 mt-10">
+                <button class="h-10 w-40 rounded-lg  bg-white text-black hover:bg-amber-500 cursor-pointer" onclick="cartQuantity++ ; console.log(`cartQuantity is:${ cartQuantity}`)">Add To Cart</button>
+                <button class="h-10 w-40 rounded-lg  bg-white text-black hover:bg-amber-500 cursor-pointer"onclick="cartQuantity+=2 ; console.log(`cartQuantity is:${ cartQuantity}`)">+2</button>
+                <button class="h-10 w-40 rounded-lg  bg-white text-black hover:bg-amber-500 cursor-pointer"onclick="console.log(`cartQuantity is:${ cartQuantity}`)">Show Cart</button>
+                <button class="h-10 w-40 rounded-lg  bg-white text-black hover:bg-amber-500 cursor-pointer"onclick=" if (cartQuantity > 0)
+                cartQuantity--; console.log(`cartQuantity is:${ cartQuantity}`)">Remove From Cart</button>
+                <button class="h-10 w-40 rounded-lg  bg-white text-black hover:bg-amber-500 cursor-pointer"onclick="cartQuantity=0; console.log(`cartQuantity is:${ cartQuantity}`)">Clear Cart</button>
+            </div>
+
+    </div>
+
+
+<script>
+    let cartQuantity = 0;
+
+
+</script>
+</body>
+</html>
