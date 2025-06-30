@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hw</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+</head>
+<body>
+<div class="min-h-screen w-screen bg-[#232F3E] flex justify-center items-center flex-col  "></div>
+
+
+    <script>
+      let coffee = 5;
+      let bagels = 3;
+      let soup = 9;
+      let cost = coffee + bagels + soup;
+      console.log(`cost of the meal is: ${cost}$`);
+      let tax = cost *0.1;
+      console.log(`10% tax: ${tax.toFixed(2)}$`);
+      let total = cost + tax;
+      console.log(`total cost of the meal is: ${total.toFixed(2)}$`);
+    </script>
+    
+</body>
+</html>
