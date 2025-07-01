@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock paper scissors</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- //steps
+//1. computer randomly selects rock paper or scissors
+//2. user selects rock paper or scissors
+//3. compare the choices
+//4. display the result -->
+
+    <div
+      class="min-h-screen w-screen bg-[#232F3E] flex justify-center items-center flex-col"
+    >
+      <div class="h-100 w-200 bg-black p-2 rounded-2xl flex flex-col gap-5">
+        <h1 class="text-4xl text-white font-bold text-center select-none">
+          Rock paper scissors
+        </h1>
+
+        <div class="flex justify-center items-center gap-5 h-100 w-200" >
+          <button
+            class="h-10 w-40 rounded-lg bg-white text-black hover:bg-gray-500 cursor-pointer"
+            onclick="
+                     let randomNumber = Math.random(); 
+                     let computerChoice ='';
+                                          if  (randomNumber >= 0 && randomNumber < 1/3) { computerChoice = 'rock'}
+                                          else if (randomNumber >= 1/3 && randomNumber < 2/3) { computerChoice = 'paper'}
+                                          else if (randomNumber >= 2/3 && randomNumber < 1) { computerChoice = 'scissors'}
+                                         console.log(computerChoice);
+                                          
+                                          let result = '';
+                                          if (computerChoice === 'rock') {result = 'game tie'}
+                                          else if (computerChoice === 'paper') {result = 'you lose'}
+                                          else if (computerChoice === 'scissors') {result = 'you win'}
+                                          alert(`you choose rock and computer choose ${computerChoice}. ${result}`);
+          "
+          >
+            Rock
+          </button>
+
+
+
+
+
+          <button
+            class="h-10 w-40 rounded-lg bg-white text-black hover:bg-gray-500 cursor-pointer"
+            onclick="
+                   let randomNumber = Math.random(); 
+                   let computerChoice ='';
+                                          if  (randomNumber >= 0 && randomNumber < 1/3) { computerChoice = 'rock'}
+                                          else if (randomNumber >= 1/3 && randomNumber < 2/3) { computerChoice = 'paper'}
+                                          else if (randomNumber >= 2/3 && randomNumber < 1) { computerChoice = 'scissors'}
+                                         console.log(computerChoice);
+                                          
+                                          let result = '';
+                                          if (computerChoice === 'rock') {result = 'you lose'}
+                                          else if (computerChoice === 'paper') {result = 'game tie'}
+                                          else if (computerChoice === 'scissors') {result = 'you win'}
+                                          alert(`you choose paper and computer choose ${computerChoice}. ${result}`);
+            
+            "
+          >
+            Paper
+          </button>
+
+
+          <button
+            class="h-10 w-40 rounded-lg bg-white text-black hover:bg-gray-500 cursor-pointer"
+            onclick=" let randomNumber = Math.random(); 
+            let computerChoice ='';
+                                 if  (randomNumber >= 0 && randomNumber < 1/3) { computerChoice = 'rock'}
+                                 else if (randomNumber >= 1/3 && randomNumber < 2/3) { computerChoice = 'paper'}
+                                 else if (randomNumber >= 2/3 && randomNumber < 1) { computerChoice = 'scissors'}
+                                console.log(computerChoice);
+                                 
+                                 let result = '';
+                                 if (computerChoice === 'rock') {result = 'you win'}
+                                 else if (computerChoice === 'paper') {result = 'you lose'}
+                                 else if (computerChoice === 'scissors') {result = 'game tie'}
+                                 alert(`you choose scissors and computer choose ${computerChoice}. ${result}`);"
+          >
+            Scissors
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script></script>
+  </body>
+</html>
