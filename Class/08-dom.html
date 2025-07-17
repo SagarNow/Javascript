@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DOM</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+    <body>
+       <h1>DOM</h1>
+       <button>Click me</button>
+       <button class="js-button"> Click me 2 </button>
+    </body>
+<script>
+    // document = html
+    // object = js
+    // model = structure
+   // >> built in docment object it work as other object it is bridge between html and js , it is help us to access and modify html elements  
+    
+   document.title = 'DOM in js 📚' // title of the page
+   console.log(document.title);
+   console.log (document.body);
+   console.log (document.body.innerHTML); // html content inside the body
+   //document.body.innerHTML = 'ALL CHANGED' // changed the html content inside the body
+  // document.body.innerHTML = '<button>Click me bro </button>' // changed the html content inside the body
+   
+   //method = funtion saved inside object 
+   /* 1. document.querySelector()
+   2. document.querySelectorAll()
+    >> it let us to get any element from the page and putit inside javascript*/
+    document.querySelector('button')
+        .innerHTML = 'Click me' // every html element has a property called innerHTML
+        
+    const buttonElement = document.querySelector('.js-button')
+        .innerHTML = 'Click me 2' // every html element has a property called innerHTML
+        console.log(buttonElement)
+// dom combines js and html together it gives js full control over html
+// >> it let us to get any element from the page and putit inside javascript
+        
+</script>
+</html>
