@@ -1,39 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Objects in js 📚</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <div class="min-h-screen w-screen bg-[#232F3E] flex justify-center items-center flex-col  ">
-        <h1 class="text-4xl text-white font-bold text-center  rounded-lg bg-[#F79600] p-2 w-50 hover:bg-red-500 cursor-pointer"> objects in js 📚</h1>
-    </div>
 
 
+<script>
+    //objects = key value pairs grouped together related to each other
+        const shop = { 
+            juta : 300, // juta = key or property name : value = 300
+            kapda :100, 
+            ghut : 200,
+            name : 'sagar',
 
-    <script>
-        //objects = key value pairs grouped together related to each other
-const shop = { 
-    juta : 300, // juta = key or property name : value = 300
-    kapda :100, 
-    ghut : 200,
-    name : 'sagar',
-    
+            }
+    console.log(shop)            // {juta: 300, kapda: 100, ghut: 200, name: 'sagar'}
+        console.log(shop.juta);       // 300
+        shop.name = 'sagar singh';    // updates the value of name
+        console.log(shop)            // {juta: 300, kapda: 100, ghut: 200, name: 'sagar singh'}
 
-}
-console.log(shop)            // {juta: 300, kapda: 100, ghut: 200, name: 'sagar'}
-console.log(shop.juta);       // 300
-shop.name = 'sagar singh';    // updates the value of name
-console.log(shop)            // {juta: 300, kapda: 100, ghut: 200, name: 'sagar singh'}
+    shop.newProperty = true; // adds a new property to the object
+    console.log(shop);
 
-shop.newProperty = true; // adds a new property to the object
-console.log(shop);
+    delete shop.newProperty;  // delete a property from the object
+    console.log(shop);
 
-delete shop.newProperty;  // delete a property from the object
-console.log(shop);
-
-    </script>
+</script>
 </body>
 </html>
