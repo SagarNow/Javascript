@@ -10,6 +10,7 @@
 
 
 <script>
+    /*
     //objects = key value pairs grouped together related to each other
         const shop = { 
             juta : 300, // juta = key or property name : value = 300
@@ -19,7 +20,7 @@
 
             }
     console.log(shop)            // {juta: 300, kapda: 100, ghut: 200, name: 'sagar'}
-        console.log(shop.juta);       // 300
+        console.log(shop.juta);       // 300 dot notation
         shop.name = 'sagar singh';    // updates the value of name
         console.log(shop)            // {juta: 300, kapda: 100, ghut: 200, name: 'sagar singh'}
 
@@ -28,7 +29,22 @@
 
     delete shop.newProperty;  // delete a property from the object
     console.log(shop);
+    */
+// ------------------------------------------------------------------------       
+    // brackets notation 
+     const shop2 = {
+        name : 'sagar',
+        }
+        console.log(shop2['name'])
+        shop2['name'] = 'sagar singh'
+        console.log(shop2)
+        // real time use
+        console.log(shop2['delivery-time'])
+        shop2['delivery-time'] = '2 days'
+        console.log(shop2)
 
+
+        
 </script>
 </body>
 </html>
