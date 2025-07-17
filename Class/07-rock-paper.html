@@ -24,12 +24,10 @@
     </div>
 
     <script>
-      const score = {
-        wins: 0,
-        losses: 0,
-        ties: 0
-      };
+      const score = JSON.parse(localStorage.getItem('score')) 
 
+     console.log(score);
+     
       function getComputerChoice() {
         const randomNumber = Math.random();
         if (randomNumber < 1/3) return 'rock';
@@ -56,6 +54,8 @@
           score.losses++;
         }
 
+        localStorage.setItem('score', JSON.stringify(score));
+        
         alert(
           `You chose: ${playerChoice}\nComputer chose: ${computer}\nResult: You ${result}!\n\nWins: ${score.wins}\nLosses: ${score.losses}\nTies: ${score.ties}`
         );
