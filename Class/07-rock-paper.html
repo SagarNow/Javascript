@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="min-h-screen w-screen bg-[#232F3E] flex justify-center items-center flex-col">
+      <div class="bg-black p-6 rounded-2xl flex flex-col gap-5 items-center">
+        <h1 class="text-4xl text-white font-bold text-center select-none">Rock Paper Scissors</h1>
+
+        <div class="flex justify-center items-center gap-5">
+          <button onclick="playGame('rock')" class="h-10 w-40 rounded-lg bg-white text-black hover:bg-gray-500 cursor-pointer">Rock</button>
+          <button onclick="playGame('paper')" class="h-10 w-40 rounded-lg bg-white text-black hover:bg-gray-500 cursor-pointer">Paper</button>
+          <button onclick="playGame('scissors')" class="h-10 w-40 rounded-lg bg-white text-black hover:bg-gray-500 cursor-pointer">Scissors</button>
+        </div>
+
+        <button onclick="resetScore()" class="mt-4 h-10 w-40 rounded-lg bg-red-500 text-white hover:bg-red-700 cursor-pointer">
+          Restart Game
+        </button>
+      </div>
+    </div>
+
+    <script>
+      const score = {
+        wins: 0,
+        losses: 0,
+        ties: 0
+      };
+
+      function getComputerChoice() {
+        const randomNumber = Math.random();
+        if (randomNumber < 1/3) return 'rock';
+        else if (randomNumber < 2/3) return 'paper';
+        else return 'scissors';
+      }
+
+      function playGame(playerChoice) {
+        const computer = getComputerChoice();
+        let result = '';
+
+        if (playerChoice === computer) {
+          result = 'tie';
+          score.ties++;
+        } else if (
+          (playerChoice === 'rock' && computer === 'scissors') ||
+          (playerChoice === 'paper' && computer === 'rock') ||
+          (playerChoice === 'scissors' && computer === 'paper')
+        ) {
+          result = 'win';
+          score.wins++;
+        } else {
+          result = 'lose';
+          score.losses++;
+        }
+
+        alert(
+          `You chose: ${playerChoice}\nComputer chose: ${computer}\nResult: You ${result}!\n\nWins: ${score.wins}\nLosses: ${score.losses}\nTies: ${score.ties}`
+        );
+      }
+
+      function resetScore() {
+        const confirmReset = confirm("Are you sure you want to restart the game?");
+        if (confirmReset) {
+          score.wins = 0;
+          score.losses = 0;
+          score.ties = 0;
+          alert("Game reset!\nWins: 0\nLosses: 0\nTies: 0");
+        }
+      }
+    </script>
+  </body>
+</html>
