@@ -99,8 +99,23 @@ shop3.fun()
     localStorage.getItem('message');
     console.log(localStorage.getItem('message'));
 
-
+    // >>> string methods auto boxing = convert primitive to object , also work with numbers
     
+    console.log('hello'.length)
+    console.log('hello'.toUpperCase())
+    // >> copy by reference
+ const object1 = {message: 'hello world'}
+ const object2 = object1;
+ console.log(object1)
+ console.log(object2)
+ object2.message = 'hello universe'
+ console.log(object1.message)
+ // 
+ const object3 = {
+    message : 'good job'
+ };
+ console.log(object3===object1); // false because diff reference
+ console.log(object1===object2); // true because same reference
 </script>
 </body>
 </html>
