@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <script>
+        //methods are function that are associated with object
+       let firstName = "sagar";
+       let lastName = "singh";
+       console.log(firstName + " " + lastName); // used "" or `` for space
+       
+       // 1. concatination - are used to combine two string
+       console.log(firstName.concat(" ", lastName));
+       
+       // 2. append - are used to add string at the end
+       let fullname = firstName + " " + lastName;
+       fullname += " good person";
+       console.log(fullname);
+       
+       // 3. length - are used to find length of string
+       console.log(fullname.length);
+       
+       // 4. toUpperCase - are used to convert string to uppercase
+       console.log(fullname.toUpperCase());
+       
+       // 5. toLowerCase - are used to convert string to lowercase
+       console.log(fullname.toLowerCase());
+       
+       // 6. slice - are used to extract part of string
+       console.log(fullname.slice(0, 5));
+       // 7. split and join - are used to split  string into array and join array into string
+       console.log(fullname.split(" ").join(" ") );
+       // 8. includes - are used to check if string contains a specific value
+       console.log(fullname.includes("s")); // true bcz "s" is present in string
+      // 9. trim - are used to remove whitespace from string
+     console.log(fullname.trim());
+     // 10. replace - are used to replace a specific value
+     console.log(fullname.replace("sagar", "virus"));
+    </script>
+</body>
+</html>
