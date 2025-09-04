@@ -9,7 +9,20 @@
 <body ><div class="bg-gray-900 min-h-screen w-screen flex justify-center items-center flex-col">  <h1 class="text-4xl text-white font-bold animate-pulse"> practice </h1></div>
  
     <script>
-      
+         let password = 8;
+         let message;
+        if (password == 8){
+            message="Welcome to our website";
+        } else if ( password <= 8){
+            message="password is too short";
+        } else if (password >= 8){
+            message="password is too long";
+        } else {
+            message="password is not valid";
+        }
+        console.log(message);
+
+       
     </script>
 </body>
 </html>

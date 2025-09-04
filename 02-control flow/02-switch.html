@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-[#232F3E] min-h-screen w-screen flex justify-center items-center flex-col">
+        <h1 class="text-4xl text-white font-bold">Switch</h1>
+    </div>
+    <script>
+      // switch - are used to execute a block of code based on a condition
+     let day =3 ;
+     let result;
+     switch (day){
+        case 1:
+        result="day 1 is Monday";
+        break; // we use break to exit the switch statement otherwise it will execute all the case
+        case 2:
+        result="day 2 is Tuesday";
+        break;
+        case 3:
+        result="day 3 is Wednesday";
+        break;
+        case 4:
+        result="day 4 is Thursday";
+        break;
+        case 5:
+        result="day 5 is Friday";
+        break;
+        case 6:
+        result="day 6 is Saturday";
+        break;
+        case 7:
+        result="day 7 is Sunday";
+        break;
+        default:
+        result="Invalid day";
+     }
+     console.log(result);
+    </script>
+</body>
+</html>
