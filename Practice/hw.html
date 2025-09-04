@@ -9,12 +9,13 @@
 <body ><div class="bg-gray-900 min-h-screen w-screen flex justify-center items-center flex-col">  <h1 class="text-4xl text-white font-bold animate-pulse"> practice </h1></div>
  
     <script>
-   let i = 10;
-  while ( i <=100 ){
-    console.log(`sagar ${i}`);
-    i++;
-  }
-
+             let password = "@sagar";
+             if (password.length >= 8 || password.includes("@")){
+                console.log("password is strong");
+             }
+             else{
+                console.log("password is weak");
+             }
     </script>
 </body>
 </html>

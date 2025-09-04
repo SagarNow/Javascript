@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>logical operator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-[#232F3E] min-h-screen w-screen flex justify-center items-center flex-col">
+        <h1 class="text-4xl text-white font-bold">logical operator</h1>
+    </div>
+    <script>
+        // logical operator are used to check multiple conditions 
+        // 1. && (and) - true only if all conditions are true
+        // 2. || (or) - true if either of the conditions is true
+        // 3. ! (not) - true if the condition is false
+
+        
+        let age = 17;
+        let vote;
+        if (age >=18 || age <= 100){
+            vote="you are eligible for vote";
+        }
+        else if (age > 16 && age < 18){     // && is a logical operator that is used to check multiple conditions
+            vote="come next year";
+        }
+        else{
+            vote="not eligible for vote";
+        }
+        console.log(vote);
+       
+    </script>
+</body>
+</html>
