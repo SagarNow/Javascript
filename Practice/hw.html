@@ -9,13 +9,15 @@
 <body ><div class="bg-gray-900 min-h-screen w-screen flex justify-center items-center flex-col">  <h1 class="text-4xl text-white font-bold animate-pulse"> practice </h1></div>
  
     <script>
-             let password = "@sagar";
-             if (password.length >= 8 || password.includes("@")){
-                console.log("password is strong");
-             }
-             else{
-                console.log("password is weak");
-             }
+           let car = {
+            type: "honda",
+            model: "2025",
+            color: "red",
+           }
+           console.log('type of car is:- '+ typeof car);
+           car.type = 'toyata';
+           car.wheels = 'aloy';
+           console.log(car);
     </script>
 </body>
 </html>
