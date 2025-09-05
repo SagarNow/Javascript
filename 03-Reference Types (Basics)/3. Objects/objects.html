@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>objects</title>
+</head>
+<body>
+
+    <script>
+        // objects - 
+         const human ={
+            name: "sagar singh",
+            age: 21,
+            pession: "coding",
+            location:["india" ,'rajasthan'],
+            programmer: true,
+         }
+         console.log(human);
+         console.log('type of human is:- '+ typeof human);
+
+//-------------------------------------------------------------------
+// accessing items form our object 
+//1. dot notation
+console.log('human name is:- '+human.name);
+//2. bracket notation 
+console.log('human age is:- '+ human['age']);
+
+// add new element to object 
+human.hobbie = "singing";
+console.log(human);
+
+// delete object item 
+delete human.name;
+console.log(human);
+    </script>
+</body>
+</html>
