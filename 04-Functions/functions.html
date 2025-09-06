@@ -1,39 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Functions</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
+  </head>
 
-<body>
-    <div class="min-h-screen w-screen bg-gray-400 flex justify-center items-center"><h1>Functions</h1></div>
-    <script> 
-        // functions - function is a block of code  that perform a specific task when it called 
+  <body>
+    <div
+      class="min-h-screen w-screen bg-gray-400 flex justify-center items-center"
+    >
+      <h1>Functions</h1>
+    </div>
+    <script>
+      // functions - function is a block of code  that perform a specific task when it called
 
-        // funx makes the code re usable , you can declare it once and use it multiple times 
-        // funx makes the program easier as each small task is divided into a function 
-        // functin increases readability 
-        // DRY - dont repeat yourself
-        // function name ( parameterIfany) {......}
-//----------------------------------------------------------------------------------------------
-        function greet (){
-            console.log('hello bro')
-        }
-        // call it 
-       
-         greet ();
-         greet ();
-         greet ();
-         greet ();
-         // parameterS - are used to pass data to function / // Function Declaration
-         function sayhello (name){
-            console.log(`hello ${name}`);
-         }
-         sayhello("sagar");
-         sayhello("manoj");
-         sayhello("davesh");
-        </script>
-</body>
+      // funx makes the code re usable , you can declare it once and use it multiple times
+      // funx makes the program easier as each small task is divided into a function
+      // functin increases readability
+      // DRY - dont repeat yourself
+      // function name ( parameterIfany) {......}
+      //----------------------------------------------------------------------------------------------
+      function greet() {
+        console.log("hello bro");
+      }
+      // call it
+      greet();
+      greet();
+//-------------------------------------------------------------------------------------------------    
+                                // Function Declaration -
+                                function sayhello(name) {
+                                    console.log(`hello ${name}`);
+                                }
+                                sayhello("sagar");
+                                sayhello("manoj");
+                                // function expression 
+                                // function without name is called anonymous function
+                                const user = function (a,b){
+                                    return a + b;
+                                }
+                                console.log(user("sagar","singh"));
+//-------------------------------------------------------------------------------------------------    
+    </script>
+  </body>
 </html>
