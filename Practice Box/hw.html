@@ -9,14 +9,18 @@
 <body ><div class="bg-gray-900 min-h-screen w-screen flex justify-center items-center flex-col">  <h1 class="text-4xl text-white font-bold animate-pulse"> practice </h1></div>
  
     <script>
-         function myfunction(a,b){
-        console.log(`${a}*${b}=${a*b}`);
+        // callback function
+ function  sum (callback , one , two)
+ {
+    let result = one + two;
+    callback(result);
+ }
+ function result(result)
+ {
+    console.log(`the sum is ${result}`);
+ }
+ sum(result,10,20);
 
-         }
-         myfunction(2,2);
-         myfunction(2,3);
-         myfunction(2,4);
-         myfunction(2,5);
     </script>
 </body>
 </html>
