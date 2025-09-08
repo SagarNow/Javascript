@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>methods</title>
+</head>
+<body>
+    <div class="bg-[#232F3E] min-h-screen w-screen flex justify-center items-center flex-col">
+        <h1 class="text-4xl text-white font-bold animate-pulse">methods</h1>
+    </div>
+    <script>
+        // methods are functions that are associated with an object
+
+ function greet ()
+{ // we used this keyword to access the object 
+    return `my name is ${this.name} , and i am ${this.age} year old.`;
+}
+
+     let person = {
+        name : "sagar",
+        age : 21,
+        greet
+     }
+    console.log(person.greet());
+
+//----------------------------------------------------------------------------------------
+// right way to write method
+let human = {
+    name: "sagar",
+    age : 21,
+    greet : function(){
+        console.log(`hello! my name is ${this.name} and i am ${this.age} year old.`);
+    }
+}
+human.greet(); 
+console.log(human.greet());   // 
+    </script>
+</body>
+</html>
