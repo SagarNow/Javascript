@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope</title>
+</head>
+<body>
+    <div class="bg-[#232F3E] min-h-screen w-screen flex justify-center items-center flex-col">
+        <h1 class="text-4xl text-white font-bold animate-pulse">scope</h1>
+    </div>
+    <script>
+        //scope is the region of code where a variable is accessible
+        // 1. global scope - variable is accessible from anywhere in the code
+        let name = "sagar";
+        function showName(){
+            console.log(name);
+        }
+        showName(); // sagar
+        // 2. local scope - variable is accessible only in the function
+        function showName(){
+            let name = "sagar";
+            console.log(name);
+        }
+        showName(); // sagar 
+        console.log(name); // error
+        
+    </script>
+</body>
+</html>
