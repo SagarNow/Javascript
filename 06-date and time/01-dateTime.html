@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>date and time</h1>
+    <script>
+      
+       let time = new Date ()
+       console.log(time);
+//----------------------------------------
+// gets the year
+const year = time.getFullYear(); 
+console.log(`year is:- ${year}`); 
+//----------------------------------------
+// gets the month 
+const month = time.getMonth();     
+console.log(`month is:- ${month}`);
+//----------------------------------------
+// gets the day 
+const day = time.getDay();
+console.log(`day is:- ${day}`); 
+//----------------------------------------
+// hours 
+const min = time.getMinutes ();
+const sec = time.getSeconds ();
+console.log(`time is:- ${min}:${sec}`);
+    </script>
+</body>
+</html>
