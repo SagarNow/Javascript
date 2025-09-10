@@ -20,7 +20,18 @@
         // we can not use variables in JSON
         
        
+        // JSON.stringify() - it is a method that is used to convert a JavaScript OBJECT into a JSON string
+        let person = {
+            name: "sagar",
+            age: 21,
+            country: "india",
+            city: "nagaur"
+        }
+        console.log(JSON.stringify(person));
 
+        // JSON.parse() - it is a method that is used to convert a JSON string into a JavaScript OBJECT
+        let person2 = JSON.parse(JSON.stringify(person));
+        console.log(person2);
     </script>
 </body>
 </html>
