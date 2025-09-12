@@ -10,11 +10,18 @@
     <div class="bg-gray-900 min-h-screen w-screen flex justify-center items-center flex-col">  <h1 class="text-4xl text-white font-bold animate-pulse"> arrow function </h1></div>
 <script>
     // arrow function :- shorter syntax for function expressions.
-     arrow = (name) => { // youcan remove () if you have only one parameter
-        console.log(name);
-    }
-    console.log(arrow("sagar"));
-    
+ //-------------------------------------------------------------    
+     // normal function
+     function add (msg){
+        return msg;
+     }
+     console.log(add("this is normal function"));
+
+     // arrow function
+     arrow = (msg) => {
+        return msg;
+     }
+     console.log(arrow("this is arrow function"));
 </script>
 </body>
 </html>

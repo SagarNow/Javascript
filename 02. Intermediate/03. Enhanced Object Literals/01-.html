@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Enhanced Object Literals :- it is a feature of ES6 that allows us to create objects in a more concise way. // short clean syntax
+        
+        // normal object
+        const obj ={
+            name: "sagar",
+            age: 21,
+            location: "india",
+    
+        }
+        console.log(obj);
+
+        // enhanced object literals
+       function user (name , age , location , color ) {
+     return {
+        name,
+        age,
+        location,
+        color,
+        intro: () => {                                      // function inside object / method // but enhanced object literals
+            console.log(`my name is ${name}!`)
+        }
+     }
+       }
+       // we can use it multiple times
+       const sagar = user("sagar",21,"rajasthan","black"); 
+       const manoj = user("manoj",21,"bihar","white");
+       const ravi = user("ravi",21,"delhi","blue");
+       
+       console.log(sagar);
+       console.log(sagar.intro());
+       console.log(manoj);
+       console.log(ravi);
+    </script>
+</body>
+</html>
