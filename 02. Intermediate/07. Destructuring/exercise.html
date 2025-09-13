@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const hihi = ["one"];
+        const [red , blue , green ] = hihi;
+        console.log(red , blue , green); // show undefined bcz there is no blue and green value
+//------------------------------------------------------------------------------------------------------------------
+// you can provide a default value 
+const [ one = 1, two = 8, three = 9] = ["one"];
+console.log(one , two , three);
+//------------------------------------------------------------------------------------------------------------------
+
+    </script>
+</body>
+</html>

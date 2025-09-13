@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destructuring</title>
+</head>
+<body>
+    <script>
+        // Destructuring :- it is a feature of ES6 that allows us to extract values from arrays or objects and assign them to variables.
+
+        // normal way - but it will be complicated with large arrays
+    const count = ["one", "two", "three"];
+    console.log(count[0]);
+//------------------------------------------------------------------------------------------------------------------
+        //destructuring way
+    const [one , two , three] = count; // it will assign values to variables
+
+    console.log(one);
+    console.log(two);
+    console.log(three);
+//------------------------------------------------------------------------------------------------------------------
+const hihi = ["one" ];
+        const [red , blue , green ] = hihi;
+        console.log(red , blue , green); // show undefined bcz there is no blue and green value
+//------------------------------------------------------------------------------------------------------------------
+    </script>
+</body>
+</html>
