@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary oprator</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<div class="h-screen w-screen bg-gray-900"> <h1>Ternary operator</h1></div>
+<body>
+  <script>
+    // Ternary operator (? :) chooses one value if a condition is true, otherwise another value. ✅
+    // condion ? expiftrue : if false ;
+     let password = 123 ;
+// noramal if else 
+     function passcheck (ps){
+      if (ps ===8){
+       return "strong password ! " ;
+      }else { return "passowrd should be 8 charactors !"}
+      
+     }
+ 
+    console.log(passcheck(password));
+// ternary operator 
+ function passcheck2 (ps){
+  return ps ===8 ? "strong password ! " : "passowrd should be 8 charactors !";
+ }
+ console.log(passcheck2(password));
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
