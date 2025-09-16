@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Destructuring</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body><div class="h-screen w-screen bg-gray-900 flex justify-center items-center flex-col">  <h1 class="text-4xl text-white font-bold animate-pulse"> function destructuring </h1></div>
+    <script>
+        // function destructuring : - we can destructure the object inside the function
+        const person  ={
+            name: "sagar",
+            age: 21,
+            location: "rajasthan",
+            color: "brown",
+        }
+// normal function
+        function output (person){
+            console.log(`name: ${person.name}` )
+            console.log(`age: ${person.age}` )
+            console.log(`location: ${person.location}` )
+            console.log(`color: ${person.color}` )
+            
+        }
+        output(person);
+// -------------------------------------------------------------------------
+// destrucutring function 
+function output2 ({name , age , location , color}){ // we can destructure the object inside the function
+            console.log(`name: ${name}`)
+            console.log(`age: ${age}`)
+            console.log(`location: ${location}`)
+            console.log(`color: ${color}`)
+            
+        }
+        output2(person);
+    </script>
+</body>
+</html>

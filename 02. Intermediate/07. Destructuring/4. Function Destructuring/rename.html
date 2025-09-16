@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen w-screen bg-gray-900 "></div>
+    <script>
+        // we can rename the property form there funciton 
+        let options = {
+            title : "menu",
+            items : ['bulb', 'wire'],
+        }
+        function showmenu ({title , items: [bulb , wire] , width: w = 100, height: h = 200}){ // destrucutring function and rename the property
+            console.log(`${title} ${w} ${h}`)
+            console.log(bulb)
+            console.log(wire)
+        }
+        showmenu(options);
+    </script>
+</body>
+</html>
