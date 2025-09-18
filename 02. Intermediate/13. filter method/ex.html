@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercise </title>
+</head>
+<body>
+    <script>
+        const computer = [ 
+            {ram: "8gb" , hdd: "1tb" , price: 25000},
+            {ram: "16gb" , hdd: "2tb" , price: 50000},
+            {ram: "32gb" , hdd: "4tb" , price: 100000},
+        ]
+        console.log(computer.filter((computer)=> computer.ram === "8gb"))
+//----------------------------------------------------------------------------
+//itterate only "ages " array
+// print only adults those whos age is greater than 18
+
+const ages = [12,15,18,20,22,25,27,29,30,32]
+console.log(ages.filter((age)=> age > 18)) 
+
+
+// or you can 
+function minors(age){
+    return age < 18
+}
+console.log(ages.filter(minors))
+    </script>
+</body>
+</html>
