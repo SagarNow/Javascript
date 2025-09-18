@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = [
+            {name : "lalu ki dukan" , category : "grocery" },
+            {name : "phone" , category : "electronics" },
+            {name : "watch" , category : "electronics" },
+            {name : "charger" , category : "electronics" },
+        ]
+        // do all category is electronics ??
+        console.log(`electronics ?? => `+products.every((products)=>products.category=="electronics")); //false bcz grocery is not electronics
+
+        // do any category is grocery??
+        console.log(`grocery ?? =>  `+ products.some((products)=>products.category == "grocery")); //true bcz grocery is available
+        
+    </script>
+</body>
+</html>

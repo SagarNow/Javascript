@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every method</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen bg-gray-900">
+        <p>every method</p>
+    </div> 
+    <script>
+
+
+//-----------------------------------------------------------------------
+        // every method :- array method that returns true if all items in the array match a condition. ✅
+        const person = [
+            {name : "sagar" , age : 20},
+            {name : "manoj" , age : 19},
+            {name : "davesh" , age : 25},
+            {name : "bhuraram ji" , age : 52},   
+           ]
+console.log(person.every((person)=> person.age >= 18)); // it will give true if all items in the array pass a test.
+//--------------------------------------------------------------------------
+
+
+
+// some method :- array method that returns true if at least one item in the array passes a test. ✅
+
+console.log(person.some((person)=> person.age < 18)); // it will give true if at least one item in the array passes a test.
+
+    </script>
+</body>
+</html>
