@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for in loop </title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen w-screen bg-gray-900 flex  justify-center items-center flex-col "> <h1 class=" font-bold text-white"> for in loop </h1></div>
+<script>
+    // for in loop :- used to loop through object keys (property names). ✅
+    // f0r (let key in object ) { ......}
+    const human ={
+        name : "sagar",
+        age : 21,
+        crazy: true,
+        country: "india",
+    }
+
+    for (let key in human){
+        console.log( key , "- " , human[key]); // key = property name , human[key] = property value
+    }
+// ---------------------------------------------------------------------
+let index = ["one", "two", "three"];
+for (let key in index){
+    console.log(key , "- " , index[key]);
+}
+</script>
+
+</body>
+</html>
