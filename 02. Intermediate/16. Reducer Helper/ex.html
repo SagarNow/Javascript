@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // find oldest guy using reduce()
+        const humans = [
+            {name: "sagar" , age: 21},
+            {name:"manoj" , age:23}, 
+            {name:"rohit" , age:27},
+            {name:"ullu" , age:28},
+        ]
+ 
+const oldest = humans.reduce((p ,c)=> {
+    if(p.age > c.age){
+        return p;
+    }
+    return c;
+})
+console.log(oldest);
+
+    </script>
+</body>
+</html>

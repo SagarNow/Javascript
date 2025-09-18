@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<div class="flex justify-center items-center h-screen w-screen bg-gray-900">
+    <div class="bg-white p-10 rounded-lg">
+        <h1 class="text-2xl font-bold">Reducer Helper</h1>
+    </div>
+</div>
+
+
+<script>
+    // reducer helper :- reduce() = takes all items in an array and combines them into a single value (sum, product, object, etc.)
+    // doesnt change the origin array 
+    // doestnt run for empty array
+    const box = [1,2,3,4,5];
+    const sum = box.reduce((privius, current) => {
+        console.log(`previous: ${privius}, current: ${current}`);
+        return privius + current;
+    }, 0);
+
+// 0 + 1 = 1
+// 1+2 = 3
+//3+ 3 = 6
+//6 + 4 = 10
+//10 + 5 = 15 
+
+
+    console.log(sum);
+     
+</script>
+<body>
+    
+</body>
+</html>
