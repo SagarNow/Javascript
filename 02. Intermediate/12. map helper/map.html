@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>map helper</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen w-screen bg-gray-900 flex  justify-center items-center flex-col "> <h1 class=" font-bold text-white"> map helper </h1></div>
+    <script>
+        // map helper :- array method that creates a new array by applying a function to each item in the original array. ✅
+        // for (let item of array) { ......}
+  let num = [1,2,3,4,5];
+
+  let double = num.map((item) => { 
+    return item * 2; // it will passed into new array
+  })
+  console.log(double);
+  console.log(num);
+
+// forEach → runs code for each item (no return).
+// map → runs code for each item and returns a new array. ✅
+    </script>   
+</body>
+</html>
