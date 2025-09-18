@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. Create a symbol provide a value of "foo"
+// 2. Check the type of that symbol.
+// 3. Create empty object
+// 4. Store symbol as the property to that object.
+// 5. Iterate over Symbol.
+
+let sym = Symbol("foo");
+typeof sym; // "symbol"
+let symObj = Object(sym);
+typeof symObj; // "object"
+
+let obj = {};
+
+obj[Symbol("a")] = "a";
+
+for (let i in obj) {
+  console.log(i); // logs "c" and "d"
+}
+    </script>
+</body>
+</html>
