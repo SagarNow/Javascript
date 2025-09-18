@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //Map = a special object that stores key-value pairs and remembers the order of keys. ✅
+
+   const map = new Map();
+   console.log(map); // Map(0) {}
+
+
+   const keyone = "sagar", keytwo = {} , keythree = function(){};
+   map.set(keyone ,     "value associated with keyone");
+   map.set(keytwo , "value associated with keytwo");
+   map.set(keythree , "value associated with keythree");
+
+
+console.log(`keys are ${map.keys()}`);
+console.log(`values are ${map.values()}`);
+console.log(`entries are ${map.entries()}`);
+console.log(`map.size is ${map.size}`);
+console.log(`map.delete(${keytwo})`, map.delete(keytwo));
+
+
+console.log(map); // keytwo is deleted
+
+
+
+
+  // console.log(map);
+
+
+
+
+
+    </script>
+</body>
+</html>
