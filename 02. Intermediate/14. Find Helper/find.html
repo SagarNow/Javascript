@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="flex justify-center items-center h-screen">
+        <p>find</p>
+    </div>
+    <script>
+        // find method :- array method that returns the first item in the array that passes a test. ✅
+        // it will give undefined if there is no sagar name avalaible 
+
+       const person = [
+        {name : "sagar" , age : 20},
+        {name : "manoj" , age : 19},
+        {name : "davesh" , age : 25},
+        {name : "davesh" , age : 30},   
+       ]
+console.log(person.find((person)=> person.name =="davesh")); // it will give first item only of 1st  name and ignore other 
+//-----------------------------------------------------------------------------------------------------------
+
+// if you want to print all then you have to use filter method 
+console.log(person.filter((person)=>person.name=="davesh")) // gives all name in the array
+
+
+
+
+
+    </script>
+</body>
+</html>

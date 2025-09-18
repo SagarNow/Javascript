@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const post = [
+            {id:1 , content:"reels", },
+            {id:2 , content:"shorts", },
+            {id:3 , content:"yt video", },
+            {id:4 , content:"reels", },
+        ]
+          const posts = post.find((posts)=> posts.content == "reels"); 
+          console.log(posts); // it will give first item only of id 1 not id 4th 
+//--------------------------------------------------
+const ages = [10 ,12,14,16,18,20,22,24,26,28,30]
+const ageres = ages.filter((ages)=> ages > 18)
+console.log(ageres)
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------
+
+
+
+    </script>
+</body>
+</html>
